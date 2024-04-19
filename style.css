@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.box {
+  background: url(cloudsjpg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 350px;
+  height: 120px;
+  border-radius: 25px;
+  left: 50%;
+  top: 50%;
+}
+.box_bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 25px;
+}
+.box_bg header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+.box_bg header form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.box_bg header form i {
+  font-size: 30px;
+  color: #ffffff;
+}
+.box_bg header form .location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.box_bg header form .location .inptLocation {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  font-size: 16px;
+  color: #ffffff;
+}
+.box_bg header form .location .inptLocation::-moz-placeholder {
+  color: #ffffff;
+  opacity: 1; /* Firefox */
+}
+.box_bg header form .location .inptLocation::placeholder {
+  color: #ffffff;
+  opacity: 1; /* Firefox */
+}
+.box_bg header form .location .inptLocation::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: #ffffff;
+}
+.box_bg header form label button {
+  background-color: transparent;
+  border: none;
+}
+.box_bg main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+.box_bg main .locationC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+.box_bg main .locationC .C {
+  font-size: 64px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+.box_bg main .locationC .location {
+  font-size: 36px;
+  text-align: center;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+.box_bg main .moreInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.box_bg main .moreInfo .wind,
+.box_bg main .moreInfo .humidity {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.box_bg main .moreInfo .wind p,
+.box_bg main .moreInfo .humidity p {
+  margin: 0;
+  padding: 0;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+.box_bg main .moreInfo .wind p:first-child,
+.box_bg main .moreInfo .humidity p:first-child {
+  font-size: 24px;
+}
+.box_bg main .moreInfo .wind i,
+.box_bg main .moreInfo .humidity i {
+  font-size: 40px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}/*# sourceMappingURL=style.css.map */
